@@ -9,6 +9,7 @@ public class ReflectionDemo {
 		Class<? extends Employee> class1 = new Employee().getClass();
 		// using forName()
 		Class<?> forName = Class.forName("com.hello.reflection.Employee");
+		forName.getDeclaredFields();
 
 	}
 
