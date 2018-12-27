@@ -6,9 +6,10 @@ public class ReflectionDemo {
 		// using class name
 		String name = Employee.class.getName();
 		//using object ref
-		Class<? extends Employee> class1 = new Employee().getClass();
+		Class class1 = new Employee().getClass();
 		// using forName()
-		Class<?> forName = Class.forName("com.hello.reflection.Employee");
+		Class forName = Class.forName("com.hello.reflection.Employee");
+		System.out.println(forName.getName());
 
 	}
 
