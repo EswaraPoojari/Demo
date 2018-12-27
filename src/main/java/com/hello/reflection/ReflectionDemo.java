@@ -11,6 +11,9 @@ public class ReflectionDemo {
 		Class class1 = new Employee().getClass();
 		// using forName()
 		Class forName = Class.forName("com.hello.reflection.Employee");
+		System.out.println(forName.getName());
+		Field declaredField = forName.getDeclaredField("id");
+
 
 	}
 
