@@ -13,6 +13,7 @@ public class ReflectionDemo {
 		Class forName = Class.forName("com.hello.reflection.Employee");
 		System.out.println(forName.getName());
 		Field declaredField = forName.getDeclaredField("id");
+		System.out.println(declaredField);
 
 
 	}
