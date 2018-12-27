@@ -14,8 +14,6 @@ public class ReflectionDemo {
 		System.out.println(forName.getName());
 		Field declaredField = forName.getDeclaredField("id");
 		System.out.println(declaredField);
-
-
 	}
 
 }
