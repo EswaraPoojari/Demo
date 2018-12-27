@@ -1,15 +1,16 @@
 package com.hello.reflection;
 
+import java.lang.reflect.Field;
+
 public class ReflectionDemo {
 
-	public static void main(String[] args) throws ClassNotFoundException {
+	public static void main(String[] args) throws ClassNotFoundException, NoSuchFieldException, SecurityException {
 		// using class name
 		String name = Employee.class.getName();
 		//using object ref
 		Class class1 = new Employee().getClass();
 		// using forName()
 		Class forName = Class.forName("com.hello.reflection.Employee");
-		System.out.println(forName.getName());
 
 	}
 
